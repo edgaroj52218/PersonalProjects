@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class OWHeroInfo {
     public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
         System.out.println("Welcome to the OW Hero Info Getter! Here is the name of all the current heroes in the  game as of October 18, 2024.");
         System.out.println("");
 
@@ -16,6 +17,8 @@ public class OWHeroInfo {
         System.out.println("Supports: ");
         SupportHeroes support = new SupportHeroes();
         System.out.println("");
+
+        for
     }
 
 }

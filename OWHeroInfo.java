@@ -1,24 +1,30 @@
 import java.util.Scanner;
 
+//import javax.swing.plaf.synth.SynthSplitPaneUI;
+
 public class OWHeroInfo {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("Welcome to the OW Hero Info Getter! Here is the name of all the current heroes in the  game as of October 18, 2024.");
-        System.out.println("");
+        System.out.println("Welcome to the Overwatch statistics!\nInput the name of the hero you want to view their stats,\nor input \"Tank\", \"DPS\", \"Support\" for the name off all heroes from that class.");
+        String userinput = scan.nextLine();
 
-        System.out.println("Tanks: ");
         TankHeroes tank = new TankHeroes();
-        System.out.println("");
-
-        System.out.println("DPS: ");
         DamageHeroes dps = new DamageHeroes();
-        System.out.println("");
-
-        System.out.println("Supports: ");
         SupportHeroes support = new SupportHeroes();
-        System.out.println("");
+        if (userinput.equalsIgnoreCase("Tank")) {
+            System.out.println(tank);
+        }
+        else if (userinput.equalsIgnoreCase("DPS")) {
+            System.out.println(dps);
+        }
+        else if (userinput.equalsIgnoreCase("Support")) {
+            System.out.println(support);
+        }
+        else {
+            System.out.println("Input not recognized.");
+        }
 
-        for
+        scan.close();
     }
 
 }

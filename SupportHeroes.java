@@ -1,8 +1,9 @@
 import java.util.ArrayList;
 
 public class SupportHeroes {
+    ArrayList<String> supportHeroes;
     public SupportHeroes() {
-        ArrayList<String> supportHeroes = new ArrayList<String>();
+        this.supportHeroes = new ArrayList<String>();
         //list of current support heroes
         supportHeroes.add("Ana");
         supportHeroes.add("Baptiste");
@@ -17,6 +18,11 @@ public class SupportHeroes {
         supportHeroes.add("Zenyatta");
 
         //print all support heroes
-        System.out.println(supportHeroes);
+        for (int i = 0; i < supportHeroes.size(); i ++) {
+            System.out.println(supportHeroes.get(i));
+        }
+    }
+        public static void main (String[] args) {
+            new SupportHeroes();
+        }
     }    
-}

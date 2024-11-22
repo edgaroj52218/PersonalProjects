@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class TankHeroes {
-    ArrayList<String> tankheros;
+    ArrayList<String> tankheroes;
 
     public TankHeroes() {
-        tankheroes = new ArrayList<>();
+        this.tankheroes = new ArrayList<>();
 
         //name of all current tank heroes
         tankheroes.add("D.va");
@@ -21,16 +21,12 @@ public class TankHeroes {
         tankheroes.add("Zarya");        
         
         //print all tank heroes
-        System.out.println(tankheroes);
-    }
-    
-        public void getHeroStats(String heroName) {
-            heroName = heroName.toLowerCase();
-
-            if (tankheroes.contains(heroName.substring(0,1).toUpperCase() + heroName.substring(1))); {
-
-                System.out.println((heroName + "Stats: "));
-            }
+        for (int i = 0; i < tankheroes.size(); i++) {
+            System.out.println(tankheroes.get(i));
         }
+    }
+    public static void main(String[] args) {
+        // Create an instance of TankHeroes
+        new TankHeroes();
     }
 }
